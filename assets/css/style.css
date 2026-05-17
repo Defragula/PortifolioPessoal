@@ -391,7 +391,8 @@ section { padding: 5.5rem 0; }
   margin: .12rem;
 }
 
-.skill-card {
+.skill-card,
+.note-card {
   min-height: 240px;
   padding: 1.5rem;
   border-radius: 1.7rem;
@@ -402,12 +403,14 @@ section { padding: 5.5rem 0; }
   transition: transform .25s ease, border-color .25s ease;
 }
 
-.skill-card:hover {
+.skill-card:hover,
+.note-card:hover {
   transform: translateY(-8px);
   border-color: color-mix(in srgb, var(--primary) 38%, var(--border));
 }
 
-.skill-card i {
+.skill-card i,
+.note-icon {
   width: 54px;
   height: 54px;
   display: grid;
@@ -419,14 +422,36 @@ section { padding: 5.5rem 0; }
   font-size: 1.4rem;
 }
 
-.skill-card h3 {
+.skill-card h3,
+.note-card h3 {
   font-size: 1.1rem;
   margin-bottom: .65rem;
 }
 
-.skill-card p {
+.skill-card p,
+.note-card p {
   color: var(--muted);
   margin: 0;
+}
+
+.note-date {
+  color: var(--primary);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: .6rem;
+}
+
+.note-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  margin-top: 1rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .project-card {
@@ -440,8 +465,12 @@ section { padding: 5.5rem 0; }
   border-color: color-mix(in srgb, var(--primary) 40%, var(--border));
 }
 
+.project-featured {
+  outline: 1px solid color-mix(in srgb, var(--primary) 28%, transparent);
+}
+
 .project-cover {
-  height: 200px;
+  height: 210px;
   background-size: auto, 32px 32px;
   display: flex;
   flex-direction: column;
@@ -478,6 +507,34 @@ section { padding: 5.5rem 0; }
   line-height: 1;
   opacity: .20;
   font-weight: 900;
+}
+
+.status-pill {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: inline-flex;
+  padding: .35rem .65rem;
+  border-radius: 999px;
+  font-size: .75rem;
+  font-weight: 800;
+  background: rgba(255,255,255,.20);
+  border: 1px solid rgba(255,255,255,.28);
+  backdrop-filter: blur(10px);
+}
+
+.status-study {
+  background: rgba(255,255,255,.18);
+}
+
+.status-lab {
+  background: rgba(255,255,255,.18);
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
 }
 
 .disabled-link {
@@ -625,6 +682,11 @@ footer {
 
   #wordRotator {
     min-width: 7.6ch;
+  }
+
+  .project-actions {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
 
