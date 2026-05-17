@@ -1,38 +1,37 @@
-# Portfólio GitHub Pages
+# Portfólio Pessoal - GitHub Pages
 
-Modelo estático moderno para portfólio pessoal/profissional.
+Versão 2 do portfólio pessoal estático.
+
+## Inclui
+
+- Visual moderno com glassmorphism
+- Tema claro/escuro automático por horário
+- Botão manual de alternância de tema
+- Efeito parallax suave
+- Animação de entrada nas seções
+- Texto dinâmico no título principal
+- Barra de progresso de leitura
+- Botão voltar ao topo
+- Seção de stack
+- Seção de destaques pessoais
+- Favicon SVG com monograma AC
+- Metatags SEO e OpenGraph básicas
 
 ## Estrutura
 
 ```text
-portfolio_github_pages/
+PortifolioPessoal/
 ├── index.html
-├── assets/
-│   ├── css/
-│   │   └── style.css
-│   └── js/
-│       └── main.js
-└── README.md
+├── README.md
+└── assets/
+    ├── css/
+    │   └── style.css
+    ├── img/
+    │   └── favicon.svg
+    └── js/
+        └── main.js
 ```
 
-## Como publicar no GitHub Pages
+## Como atualizar
 
-1. Crie um repositório no GitHub.
-2. Envie todos os arquivos desta pasta.
-3. No GitHub, vá em `Settings > Pages`.
-4. Em `Build and deployment`, escolha:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/root`
-5. Salve.
-6. Aguarde o GitHub gerar o link do site.
-
-## Onde editar
-
-- Nome e textos principais: `index.html`
-- Cores, layout e aparência: `assets/css/style.css`
-- Tema claro/escuro, animações e parallax: `assets/js/main.js`
-
-## Observação
-
-Este projeto não depende de Flask, WordPress, banco de dados ou backend.
+Envie os arquivos para o repositório, substituindo os atuais, faça commit e aguarde o GitHub Pages atualizar.
