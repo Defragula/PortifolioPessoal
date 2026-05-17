@@ -36,7 +36,3 @@ portfolio_github_pages/
 ## Observação
 
 Este projeto não depende de Flask, WordPress, banco de dados ou backend.
-
-1. Create a TXT record in your DNS configuration for the following hostname: _github-pages-challenge-Defragula.baculo.com
-2. Use this code for the value of the TXT record: 0e27195c47b0810784c2fdde34eb40
-3. Wait until your DNS configuration changes. This could take up to 24 hours to propagate.
