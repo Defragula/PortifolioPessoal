@@ -271,22 +271,26 @@ body::after {
 
 .word-line {
   display: block;
-  min-height: 1.05em;
-  line-height: 1.05;
+  min-height: 1.35em;
+  line-height: 1.25;
+  padding-bottom: 0.18em;
   white-space: nowrap;
-  overflow: hidden;
 }
 
 #wordRotator {
   display: inline-block;
-  min-width: 8.2ch;
-  transition: opacity .45s ease, transform .45s ease, filter .45s ease;
+  min-width: 10ch;
+  padding-bottom: 0.08em;
+  transition:
+    opacity .45s ease,
+    transform .45s ease,
+    filter .45s ease;
 }
 
 #wordRotator.switching {
   opacity: 0;
-  transform: translateY(10px);
-  filter: blur(4px);
+  transform: translateY(6px);
+  filter: blur(2px);
 }
 
 .text-gradient {
