@@ -1,23 +1,18 @@
-# Portfólio Pessoal - GitHub Pages
+# Portfólio Pessoal - GitHub Pages - Versão 3
 
-Versão 2 do portfólio pessoal estático.
+## Melhorias desta versão
 
-## Inclui
+- Animação do título mais suave, sem alterar altura da tela
+- Palavra animada travada na mesma linha
+- Fade-in mais refinado nos cards conforme rolagem
+- Loading screen elegante
+- Partículas animadas discretas
+- Timeline interativa simples
+- Comentários no HTML indicando onde editar e-mail, LinkedIn, GitHub e WhatsApp
+- SEO/OpenGraph básico preservado
+- Estrutura leve, estática e segura para GitHub Pages
 
-- Visual moderno com glassmorphism
-- Tema claro/escuro automático por horário
-- Botão manual de alternância de tema
-- Efeito parallax suave
-- Animação de entrada nas seções
-- Texto dinâmico no título principal
-- Barra de progresso de leitura
-- Botão voltar ao topo
-- Seção de stack
-- Seção de destaques pessoais
-- Favicon SVG com monograma AC
-- Metatags SEO e OpenGraph básicas
-
-## Estrutura
+## Estrutura correta no repositório
 
 ```text
 PortifolioPessoal/
@@ -32,6 +27,32 @@ PortifolioPessoal/
         └── main.js
 ```
 
-## Como atualizar
+## Onde editar contatos
 
-Envie os arquivos para o repositório, substituindo os atuais, faça commit e aguarde o GitHub Pages atualizar.
+No arquivo `index.html`, procure por:
+
+```html
+<section id="contato">
+```
+
+Dentro dessa seção existem comentários explicando:
+
+```html
+href="mailto:seuemail@exemplo.com"
+href="https://www.linkedin.com/in/seu-usuario/"
+href="https://github.com/Defragula"
+href="https://wa.me/5511999999999"
+```
+
+## Como atualizar no GitHub
+
+1. Extraia este ZIP.
+2. Envie `index.html`, `README.md` e a pasta `assets` para o repositório.
+3. Substitua os arquivos antigos.
+4. Clique em `Commit changes`.
+5. Aguarde 1 a 3 minutos.
+6. Atualize o site com `Ctrl + F5`.
+
+## Observação
+
+Projeto pessoal, estático, sem backend, sem banco de dados e sem integração com sistemas internos.
